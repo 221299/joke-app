@@ -7,7 +7,7 @@ function App() {
   const [fname,setFN]=useState("john")
   const [sname,setSN]=useState("doe")
   const newjoke =(first,second)=>{
-    fetch(`http://api.icndb.com/jokes/random?firstName=${first}&lastName=${second}`).
+    fetch(`https://api.icndb.com/jokes/random?firstName=${first}&lastName=${second}`).
     then(res=>res.json())
     .then(res2=>{
       console.log(res2)
